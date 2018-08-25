@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "tabScrollTop2",
+  "version": "0.2",
+  "author": "Nick Odnari",
+  "description": "Page action for page scrolling. Click on the page action icon to scroll to the top, click again to go back to the previous / last position.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "32": "icons/icon-32.png"
+  },
+  "homepage_url": "https://github.com/odnari/tabScrollTop2",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "page_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "Scroll up/down"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
