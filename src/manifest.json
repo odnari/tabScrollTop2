@@ -9,13 +9,15 @@
     "32": "icons/icon-32.png"
   },
   "homepage_url": "https://github.com/odnari/tabScrollTop2",
-  "permissions": [
-    "activeTab",
-    "tabs"
-  ],
+  "permissions": ["activeTab"],
   "page_action": {
     "default_icon": "icons/icon-32.png",
-    "default_title": "Scroll up/down"
+    "default_title": "Scroll up/down",
+    "show_matches": ["<all_urls>"],
+    "hide_matches": [
+      "*://addons.mozilla.org/*",
+      "*://testpilot.firefox.com/*"
+    ]
   },
   "background": {
     "scripts": ["background.js"]
